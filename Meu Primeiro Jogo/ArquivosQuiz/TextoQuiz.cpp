@@ -6,6 +6,26 @@
 #include "locale.h"
 
 //part 1 ===========================================
+
+int PerguntaJogarNovamentetext()
+{
+    FILE *PerguntaJogarNovamente;
+    char textoPJogarNovamente[20];
+    setlocale(LC_ALL, "Portuguese_Brazil");
+
+    PerguntaJogarNovamente = fopen("textos/Quizz/PerguntaJogarNovamente.txt", "r");
+
+    while(fgets(textoPJogarNovamente, 20, PerguntaJogarNovamente) !=NULL){
+        printf("%s", textoPJogarNovamente);
+    }
+    printf(" \n\n");
+    fclose(PerguntaJogarNovamente);
+
+
+
+return 0;
+}
+
 int PerguntaPulaEtapastext()
 {
     FILE *PerguntaPulaEtapas;

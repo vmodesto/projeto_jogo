@@ -6,6 +6,7 @@
 #include "locale.h"
 //Declarando funcoes
 int main();
+void menu();
 int funcaoCronometro();
 int QuizParte1text();
 int SteveIntroducaotext();
@@ -14,6 +15,7 @@ int SteveErrouPerguntatext();
 int StevePerdeuJogotext();
 int StevePulaEtapastext();
 int PerguntaPulaEtapastext();
+int PerguntaJogarNovamentetext();
 int QuizParte2text();
 int QuizParte3text();
 int QuizParte4text();
@@ -24,12 +26,31 @@ int QuizParte5text();
 int vida = 3;
 int pulaEtapa = 2;
 int pegaResposta;
-int jogarNovamente;
+int jogarNovamente = 0;
 
 // fazer uma funcao de introducao
 
 int SteveIntroducao(){
     SteveIntroducaotext();
+}
+
+int JogarNovamente(){
+    PerguntaJogarNovamentetext();
+    printf("Digite sua escolha: ");
+    scanf("%i", &jogarNovamente);
+    if(jogarNovamente == 1){
+        vida = 3;
+        pulaEtapa = 2;
+        QuizParte1();
+    }
+    if (jogarNovamente == 2){
+        printf("voce sera retornado ao menu");
+        Sleep(3000);
+        vida = 3;
+        pulaEtapa = 2;
+        menu();
+    }
+
 }
 
 int QuizParte1() //fase 1
@@ -83,9 +104,7 @@ int QuizParte1() //fase 1
             system("pause");
             Sleep(2000);
             system ("cls");
-            vida = 3;
-            pulaEtapa = 2;
-            QuizParte1();
+            JogarNovamente();
         }
         QuizParte1();
     }
@@ -143,9 +162,7 @@ int QuizParte2() //fase 2
             system("pause");
             Sleep(2000);
             system ("cls");
-            vida = 3;
-            pulaEtapa = 2;
-            QuizParte1();
+            JogarNovamente();
         }
         QuizParte2();
     }
@@ -202,9 +219,7 @@ int QuizParte3() //fase 3
             system("pause");
             Sleep(2000);
             system ("cls");
-            vida = 3;
-             pulaEtapa = 2;
-            QuizParte1();
+            JogarNovamente();
         }
         QuizParte3();
     }
@@ -261,9 +276,7 @@ int QuizParte4() //fase 4
             system("pause");
             Sleep(2000);
             system ("cls");
-            vida = 3;
-             pulaEtapa = 2;
-            QuizParte1();
+            JogarNovamente();
         }
         QuizParte4();
     }
@@ -324,9 +337,7 @@ int QuizParte5() //fase 5
             system("pause");
             Sleep(2000);
             system ("cls");
-            vida = 3;
-             pulaEtapa = 2;
-            QuizParte1();
+            JogarNovamente();
         }
         QuizParte5();
     }
