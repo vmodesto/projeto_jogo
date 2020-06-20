@@ -1,0 +1,5 @@
+Nome:adm
+Senha:adm1822
+Fase:1
+NewPers:2
+Quiz:1

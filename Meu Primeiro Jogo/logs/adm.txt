@@ -1,0 +1,5 @@
+Nome:adm
+Senha:adm
+Fase:5
+NewPers:1
+Quiz:1
