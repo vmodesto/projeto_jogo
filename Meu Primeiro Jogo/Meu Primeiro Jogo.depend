@@ -1586,3 +1586,36 @@
 	"rotasPuzzle.h"
 	<sys/stat.h>
 
+1592623574 source:c:\users\vmode\onedrive\documentos\github\projeto_jogo\meu primeiro jogo\arquivosquiz\funcaoquiz.cpp
+	"../RotaQuiz.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"locale.h"
+
+1592623215 c:\users\vmode\onedrive\documentos\github\projeto_jogo\meu primeiro jogo\rotaquiz.h
+
+1592623143 source:c:\users\vmode\onedrive\documentos\github\projeto_jogo\meu primeiro jogo\arquivosquiz\textoquiz.cpp
+	"../RotaQuiz.h"
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"locale.h"
+
+1592437488 source:c:\users\vmode\onedrive\documentos\github\projeto_jogo\meu primeiro jogo\main.cpp
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<iostream>
+	<conio.h>
+	"RotaQuiz.h"
+	"rotasPuzzle.h"
+	<sys/stat.h>
+
+1592260554 c:\users\vmode\onedrive\documentos\github\projeto_jogo\meu primeiro jogo\rotaspuzzle.h
+
+1592252734 source:c:\users\vmode\onedrive\documentos\github\projeto_jogo\meu primeiro jogo\utilitarian\registros.cpp
+
